@@ -1,0 +1,6 @@
+Revision history for Perl extension mqs::header.
+
+0.01  Mon Sep 24 16:30:54 2001
+	- original version; created by h2xs 1.21 with options
+		-cn mqs::header
+

@@ -1,0 +1,37 @@
+NAME
+    mqs::header - Perl extension for header management of files, to use with
+    mqs::spool module
+
+SYNOPSIS
+      use mqs::header;
+
+    %header read_header($content)
+
+    $content add_header($content,$key,$value)
+
+    $content read_content($content)
+
+DESCRIPTION
+    mqs::spool manage headers in messages or in simple scalar, when you add
+    a new value in the header of a scalar, the first values given to the
+    header is mqs-header: yes this value determines the fact that the scalar
+    has an header.
+
+    read_header returns a hash wich keys and values in the header, if no
+    header is included in $content, the hash contains only mqs-header: no.
+
+    add_header adds a key: value in the header and create the header if it
+    does not exist
+
+    read_content returns the content of all the scalar without the header.
+
+  EXPORT
+
+    add_header read_header read_content
+
+AUTHOR
+    Stehane TOUGARD elair@darea.fr
+
+SEE ALSO
+    the perl manpage.
+
